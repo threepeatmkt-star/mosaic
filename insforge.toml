@@ -3,6 +3,7 @@ allowed_redirect_urls = [
   "http://localhost:3000",
   "http://localhost:3000/auth",
   "http://localhost:3000/dashboard",
+  "http://localhost:3000/generate",
 ]
 require_email_verification = true
 verify_email_method = "code"

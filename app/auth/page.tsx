@@ -14,7 +14,7 @@ export default function AuthPage() {
     try {
       const { error } = await insforge.auth.signInWithOAuth({
         provider: "google",
-        redirectTo: `${window.location.origin}/dashboard`,
+        redirectTo: `${window.location.origin}/generate`,
       });
       if (error) throw error;
     } catch (err) {
