@@ -1,17 +1,28 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#eceef0] text-[#202020] font-sans">
       {/* Navigation */}
       <nav className="border-b border-[#dee0e2]">
         <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="text-xl font-bold tracking-tight">mosaic</div>
+          <a href="/" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="삼대오백"
+              width={300}
+              height={98}
+              priority
+              className="h-8 w-auto"
+            />
+          </a>
           <div className="hidden md:flex items-center gap-8 text-sm">
             <a href="#features" className="hover:opacity-60 transition-opacity">기능</a>
             <a href="#how" className="hover:opacity-60 transition-opacity">사용 방법</a>
             <a href="#pricing" className="hover:opacity-60 transition-opacity">요금제</a>
           </div>
           <a
-            href="#start"
+            href="/auth"
             className="bg-[#202020] text-[#eceef0] px-5 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
           >
             시작하기
@@ -36,7 +47,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
           <a
-            href="#start"
+            href="/auth"
             className="bg-[#202020] text-[#eceef0] px-8 py-4 rounded-full text-base font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto"
           >
             무료로 시작하기
@@ -183,7 +194,7 @@ export default function Home() {
             가입 후 30초면 첫 영상을 만들 수 있습니다.
           </p>
           <a
-            href="#"
+            href="/auth"
             className="inline-block bg-[#eceef0] text-[#202020] px-10 py-4 rounded-full text-base font-semibold hover:opacity-90 transition-opacity"
           >
             지금 무료로 시작하기 →
@@ -194,7 +205,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-[#dee0e2] py-10">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div className="text-sm opacity-60">© 2026 mosaic. All rights reserved.</div>
+          <div className="text-sm opacity-60">© 2026 삼대오백. All rights reserved.</div>
           <div className="flex gap-6 text-sm">
             <a href="#" className="opacity-60 hover:opacity-100 transition-opacity">이용약관</a>
             <a href="#" className="opacity-60 hover:opacity-100 transition-opacity">개인정보처리방침</a>
